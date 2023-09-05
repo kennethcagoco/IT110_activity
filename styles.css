@@ -1,0 +1,109 @@
+/* Reset some default styles and set a base font size */
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the main content area */
+main {
+  padding: 50px;
+}
+
+/* Create a container for the columns */
+.container {
+  display: flex;
+}
+
+/* Define styles for each column */
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #7684ff;
+}
+
+img {
+  flex: 1;
+  padding: 5px;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+button {
+  color: #ffffff;
+  background-color: #0077ff;
+  border: 1px solid #1D9AF2;
+  border-radius: 4px;
+  padding: 0 15px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  height: 32px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.8); 
+}
+
+
+.text {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  background-color: rgb(19, 11, 139);
+}
+
+/* Media Query: Adjust layout for smaller screens */
+@media (max-width: 800px) {
+  .container {
+      flex-direction: column;
+  }
+  .img {
+    flex-direction: row;
+  }
+  .button {
+    flex-direction: row;
+  }
+  .column {
+    margin-bottom: 50px;
+  }
+  .button {
+    margin: 0 auto; /* Center horizontally */
+  }
+}
+
+
+
+
+
+
